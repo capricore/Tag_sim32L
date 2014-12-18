@@ -1,0 +1,16 @@
+build\flash_operation.o: app\flash_operation.c
+build\flash_operation.o: app\flash_operation.h
+build\flash_operation.o: D:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+build\flash_operation.o: D:\Silabs\32bit\si32-1.1.2\si32Hal\SI32_Modules\SI32_FLASHCTRL_A_Type.h
+build\flash_operation.o: D:\Keil\ARM\ARMCC\bin\..\include\stdbool.h
+build\flash_operation.o: D:\Silabs\32bit\si32-1.1.2\si32Hal\SI32_Modules\si32WideTypes.h
+build\flash_operation.o: D:\Silabs\32bit\si32-1.1.2\si32Hal\SI32_Modules\SI32_FLASHCTRL_A_Registers.h
+build\flash_operation.o: .\arch\FLASHCTRL.h
+build\flash_operation.o: D:\Silabs\32bit\si32-1.1.2\si32Hal\sim3l1xx\SI32_CLKCTRL_A_Type.h
+build\flash_operation.o: D:\Silabs\32bit\si32-1.1.2\si32Hal\sim3l1xx\SI32_SIM3L1XX_CLKCTRL_A_Registers.h
+build\flash_operation.o: D:\Silabs\32bit\si32-1.1.2\si32Hal\sim3l1xx\SI32_CLKCTRL_A_Support.h
+build\flash_operation.o: D:\Silabs\32bit\si32-1.1.2\si32Hal\SI32_Modules\SI32_VMON_B_Type.h
+build\flash_operation.o: D:\Silabs\32bit\si32-1.1.2\si32Hal\SI32_Modules\SI32_VMON_B_Registers.h
+build\flash_operation.o: D:\Silabs\32bit\si32-1.1.2\si32Hal\sim3l1xx\SI32_RSTSRC_A_Type.h
+build\flash_operation.o: D:\Silabs\32bit\si32-1.1.2\si32Hal\sim3l1xx\SI32_SIM3L1XX_RSTSRC_A_Registers.h
+build\flash_operation.o: D:\Silabs\32bit\si32-1.1.2\si32Hal\sim3l1xx\SI32_RSTSRC_A_Support.h

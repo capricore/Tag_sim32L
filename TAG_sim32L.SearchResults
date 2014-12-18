@@ -1,0 +1,39 @@
+---- pkt_cave_struct Matches (49 in 3 files) ----
+Event_receive_pkt.c (app):struct time_info pkt_time_struct, pkt_cave_struct;
+Event_receive_pkt.c (app):	if(rfRxInfo.pPayload[rfRxInfo.length-1] == 0x30 && rfRxInfo.pPayload[0] == 0x00){	//cave packe		pkt_cave_struct.receiverID = rfRxInfo.srcAddr;
+Event_receive_pkt.c (app):		pkt_cave_struct.receiverID = rfRxInfo.srcAddr;
+Event_receive_pkt.c (app):		pkt_cave_struct.panID = 0;
+Event_receive_pkt.c (app):		pkt_cave_struct.panID |= rfRxInfo.pPayload[2];
+Event_receive_pkt.c (app):		pkt_cave_struct.panID = pkt_cave_struct.panID << 8;
+Event_receive_pkt.c (app):		pkt_cave_struct.panID |= rfRxInfo.pPayload[1];		
+Event_receive_pkt.c (app):		pkt_cave_struct.time = 0;
+Event_receive_pkt.c (app):		pkt_cave_struct.time |= rfRxInfo.pPayload[6];
+Event_receive_pkt.c (app):		pkt_cave_struct.time = pkt_cave_struct.time << 8;
+Event_receive_pkt.c (app):		pkt_cave_struct.time |= rfRxInfo.pPayload[5];
+Event_receive_pkt.c (app):		pkt_cave_struct.time = pkt_cave_struct.time << 8;
+Event_receive_pkt.c (app):		pkt_cave_struct.time |= rfRxInfo.pPayload[4];
+Event_receive_pkt.c (app):		pkt_cave_struct.time = pkt_cave_struct.time << 8;
+Event_receive_pkt.c (app):		pkt_cave_struct.time |= rfRxInfo.pPayload[3];
+Event_receive_pkt.c (app):		pkt_cave_struct.subtime = rfRxInfo.pPayload[7];
+Event_receive_pkt.c (app):		pkt_cave_struct.nextWTime = 0;
+Event_receive_pkt.c (app):		pkt_cave_struct.nextWTime |= rfRxInfo.pPayload[11];
+Event_receive_pkt.c (app):		pkt_cave_struct.nextWTime = pkt_cave_struct.nextWTime << 8;
+Event_receive_pkt.c (app):		pkt_cave_struct.nextWTime |= rfRxInfo.pPayload[10];
+Event_receive_pkt.c (app):		pkt_cave_struct.nextWTime = pkt_cave_struct.nextWTime << 8;
+Event_receive_pkt.c (app):		pkt_cave_struct.nextWTime |= rfRxInfo.pPayload[9];
+Event_receive_pkt.c (app):		pkt_cave_struct.nextWTime = pkt_cave_struct.nextWTime << 8;
+Event_receive_pkt.c (app):		pkt_cave_struct.nextWTime |= rfRxInfo.pPayload[8];
+Event_receive_pkt.c (app):		pkt_cave_struct.period = 0;
+Event_receive_pkt.c (app):		pkt_cave_struct.period |= rfRxInfo.pPayload[13];
+Event_receive_pkt.c (app):		pkt_cave_struct.period = pkt_cave_struct.period << 8;
+Event_receive_pkt.c (app):		pkt_cave_struct.period |= rfRxInfo.pPayload[12];
+Event_receive_pkt.c (app):		pkt_cave_struct.seq = rfRxInfo.pPayload[14];
+Main.c:extern struct time_info pkt_time_struct, pkt_cave_struct;		//洞内收到的包也用这个结构体，此时receiverID表示人流量节点ID，exciterID无效
+Main.c:								lastRID = pkt_cave_struct.receiverID;
+Main.c:							if(lastRID == pkt_cave_struct.receiverID) {
+RTC0.c (arch):extern struct time_info pkt_time_struct, pkt_cave_struct;
+RTC0.c (arch):		pkt_sub_time = pkt_cave_struct.subtime + pkt_cave_struct.time%4 *250;
+RTC0.c (arch):		pkt_time_long = pkt_cave_struct.time >> 2;
+RTC0.c (arch):		pkt_next_time_long = pkt_cave_struct.nextWTime;
+RTC0.c (arch):			send_cave_pkt(pkt_cave_struct.seq, pkt_cave_struct.panID, pkt_cave_struct.receiverID);
+RTC0.c (arch):		period = pkt_cave_struct.period >> 2;	

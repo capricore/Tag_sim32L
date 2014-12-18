@@ -1,0 +1,4 @@
+-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I. -Igenerated -ID:\Silabs\32bit\si32-1.1.2\si32Hal\CPU -ID:\Silabs\32bit\si32-1.1.2\si32Hal\SI32_Modules -ID:\Silabs\32bit\si32-1.1.2\si32Hal\sim3l1xx -I.\app -I.\arch -I.\as3933 -I.\option -I.\rf2xx -I.\system_param -I.\exciter --c99 --gnu 
+-I D:\Keil\ARM\RV31\INC 
+-I D:\Keil\ARM\CMSIS\Include 
+-DNDEBUG -o "build\rf2xx_send.o" --omf_browse "build\rf2xx_send.crf" --depend "build\rf2xx_send.d" "rf2xx\rf2xx_send.c"

@@ -1,0 +1,89 @@
+*** Creating Trace Output File 'build\Tag_sim32L.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '"build\retarget_arm.o"'
+### List of Objects: adding '"build\startup_sim3l1xx_arm.o"'
+### List of Objects: adding '"build\system_sim3l1xx.o"'
+### List of Objects: adding '"build\si32_extosc_a_type.o"'
+### List of Objects: adding '"build\si32_pll_a_type.o"'
+### List of Objects: adding '"build\si32_rtc_b_type.o"'
+### List of Objects: adding '"build\si32_saradc_a_type.o"'
+### List of Objects: adding '"build\si32_cmp_a_type.o"'
+### List of Objects: adding '"build\si32_idac_a_type.o"'
+### List of Objects: adding '"build\si32_pvtosc_a_type.o"'
+### List of Objects: adding '"build\si32_i2c_a_type.o"'
+### List of Objects: adding '"build\si32_spi_b_type.o"'
+### List of Objects: adding '"build\si32_usart_b_type.o"'
+### List of Objects: adding '"build\si32_uart_b_type.o"'
+### List of Objects: adding '"build\si32_flashctrl_a_type.o"'
+### List of Objects: adding '"build\si32_dcdc_a_type.o"'
+### List of Objects: adding '"build\si32_vmon_b_type.o"'
+### List of Objects: adding '"build\si32_vref_b_type.o"'
+### List of Objects: adding '"build\si32_lptimer_b_type.o"'
+### List of Objects: adding '"build\si32_epca_a_type.o"'
+### List of Objects: adding '"build\si32_epcach_a_type.o"'
+### List of Objects: adding '"build\si32_timer_a_type.o"'
+### List of Objects: adding '"build\si32_wdtimer_a_type.o"'
+### List of Objects: adding '"build\si32_aes_b_type.o"'
+### List of Objects: adding '"build\si32_ecrc_a_type.o"'
+### List of Objects: adding '"build\si32_encdec_a_type.o"'
+### List of Objects: adding '"build\si32_acctr_a_type.o"'
+### List of Objects: adding '"build\si32_pmu_a_type.o"'
+### List of Objects: adding '"build\si32_ldo_a_type.o"'
+### List of Objects: adding '"build\si32_lock_a_type.o"'
+### List of Objects: adding '"build\si32_rstsrc_a_type.o"'
+### List of Objects: adding '"build\main.o"'
+### List of Objects: adding '"build\configuration.o"'
+### List of Objects: adding '"build\event_exciter.o"'
+### List of Objects: adding '"build\event_receive_pkt.o"'
+### List of Objects: adding '"build\event_wk_time.o"'
+### List of Objects: adding '"build\flash_operation.o"'
+### List of Objects: adding '"build\systick.o"'
+### List of Objects: adding '"build\workstate.o"'
+### List of Objects: adding '"build\as3933.o"'
+### List of Objects: adding '"build\as3933_hal.o"'
+### List of Objects: adding '"build\as3933_spi.o"'
+### List of Objects: adding '"build\as3933_tat.o"'
+### List of Objects: adding '"build\clkctrl.o"'
+### List of Objects: adding '"build\cpu.o"'
+### List of Objects: adding '"build\dcdc.o"'
+### List of Objects: adding '"build\flashctrl.o"'
+### List of Objects: adding '"build\mcu.o"'
+### List of Objects: adding '"build\modes.o"'
+### List of Objects: adding '"build\pb.o"'
+### List of Objects: adding '"build\pmu.o"'
+### List of Objects: adding '"build\rtc_alarm_relative.o"'
+### List of Objects: adding '"build\rtc0.o"'
+### List of Objects: adding '"build\timeout.o"'
+### List of Objects: adding '"build\wdtimer0.o"'
+### List of Objects: adding '"build\csma.o"'
+### List of Objects: adding '"build\mac_state.o"'
+### List of Objects: adding '"build\rf2xx_hal.o"'
+### List of Objects: adding '"build\rf2xx_init.o"'
+### List of Objects: adding '"build\rf2xx_mcu.o"'
+### List of Objects: adding '"build\rf2xx_option.o"'
+### List of Objects: adding '"build\rf2xx_protoc.o"'
+### List of Objects: adding '"build\rf2xx_recv.o"'
+### List of Objects: adding '"build\rf2xx_send.o"'
+### List of Objects: adding '"build\rf2xx_spi.o"'
+### List of Objects: adding '"build\rf2xx_tat.o"'
+### List of Objects: adding '"build\rf2xx_version.o"'
+### List of Objects: adding '"build\crc.o"'
+### List of Objects: adding '"build\sysparam.o"'
+### List of Objects: adding '"build\sysparam_option.o"'
+### ADS-LD Command completed:
+--cpu Cortex-M3 "build\retarget_arm.o" "build\startup_sim3l1xx_arm.o" "build\system_sim3l1xx.o" "build\si32_extosc_a_type.o" "build\si32_pll_a_type.o" "build\si32_rtc_b_type.o" "build\si32_saradc_a_type.o" "build\si32_cmp_a_type.o" "build\si32_idac_a_type.o" "build\si32_pvtosc_a_type.o" "build\si32_i2c_a_type.o" "build\si32_spi_b_type.o" "build\si32_usart_b_type.o" "build\si32_uart_b_type.o" "build\si32_flashctrl_a_type.o" "build\si32_dcdc_a_type.o" "build\si32_vmon_b_type.o" "build\si32_vref_b_type.o" "build\si32_lptimer_b_type.o" "build\si32_epca_a_type.o" "build\si32_epcach_a_type.o" "build\si32_timer_a_type.o" "build\si32_wdtimer_a_type.o" "build\si32_aes_b_type.o" "build\si32_ecrc_a_type.o" "build\si32_encdec_a_type.o" "build\si32_acctr_a_type.o" "build\si32_pmu_a_type.o" "build\si32_ldo_a_type.o" "build\si32_lock_a_type.o" "build\si32_rstsrc_a_type.o" "build\main.o" "build\configuration.o" "build\event_exciter.o" "build\event_receive_pkt.o" "build\event_wk_time.o" "build\flash_operation.o" "build\systick.o" "build\workstate.o" "build\as3933.o" "build\as3933_hal.o" "build\as3933_spi.o" "build\as3933_tat.o" "build\clkctrl.o" "build\cpu.o" "build\dcdc.o" "build\flashctrl.o" "build\mcu.o" "build\modes.o" "build\pb.o" "build\pmu.o" "build\rtc_alarm_relative.o" "build\rtc0.o" "build\timeout.o" "build\wdtimer0.o" "build\csma.o" "build\mac_state.o" "build\rf2xx_hal.o" "build\rf2xx_init.o" "build\rf2xx_mcu.o" "build\rf2xx_option.o" "build\rf2xx_protoc.o" "build\rf2xx_recv.o" "build\rf2xx_send.o" "build\rf2xx_spi.o" "build\rf2xx_tat.o" "build\rf2xx_version.o" "build\crc.o" "build\sysparam.o" "build\sysparam_option.o" 
+--library_type=microlib --strict --scatter "D:\Silabs\32bit\si32-1.1.2\si32Hal\sim3l1xx\linker_sim3l1xx_arm.sct" 
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list "build\Tag_sim32L.map" -o build\Tag_sim32L.axf### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: 'build\Tag_sim32L.axf'
+### ADS-LD Command File: 'build\Tag_sim32L.lnp'
+### Checking for dirty Components...
+### Creating CmdFile 'build\Tag_sim32L.lnp', Handle=0x000003D0
+### Writing '.lnp' file
+### ADS-LD Command file 'build\Tag_sim32L.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.

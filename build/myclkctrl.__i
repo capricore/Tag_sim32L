@@ -1,0 +1,4 @@
+-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I. -Igenerated -ID:\Silabs\32bit\si32-1.1.2\si32Hal\CPU -ID:\Silabs\32bit\si32-1.1.2\si32Hal\SI32_Modules -ID:\Silabs\32bit\si32-1.1.2\si32Hal\sim3l1xx --c99 --gnu 
+-I D:\Keil\ARM\RV31\INC 
+-I D:\Keil\ARM\CMSIS\Include 
+-DNDEBUG -o "build\myclkctrl.o" --omf_browse "build\myclkctrl.crf" --depend "build\myclkctrl.d" "myCLKCTRL.c"

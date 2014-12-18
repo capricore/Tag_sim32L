@@ -1,0 +1,4 @@
+-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I. -Igenerated -ID:\Silabs\32bit\si32-1.1.2\si32Hal\CPU -ID:\Silabs\32bit\si32-1.1.2\si32Hal\SI32_Modules -ID:\Silabs\32bit\si32-1.1.2\si32Hal\sim3l1xx -I.\app -I.\arch -I.\as3933 -I.\option -I.\rf2xx -I.\system_param -I.\exciter --c99 --gnu 
+-I D:\Keil\ARM\RV31\INC 
+-I D:\Keil\ARM\CMSIS\Include 
+-DNDEBUG -o "build\sysparam_option.o" --omf_browse "build\sysparam_option.crf" --depend "build\sysparam_option.d" "system_param\sysparam_option.c"

@@ -1,0 +1,4 @@
+--cpu Cortex-M3 -g --apcs=interwork --pd "__MICROLIB SETA 1" 
+-I D:\Keil\ARM\RV31\INC 
+-I D:\Keil\ARM\CMSIS\Include 
+--list "build\startup_sim3l1xx_arm.lst" --xref -o "build\startup_sim3l1xx_arm.o" --depend "build\startup_sim3l1xx_arm.d" "D:\Silabs\32bit\si32-1.1.2\si32Hal\sim3l1xx\startup_sim3l1xx_arm.s"
